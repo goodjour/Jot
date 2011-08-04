@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<title>My Task Helper</title>
+	<link rel="stylesheet" type="text/css" media="all" href="./stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" media="all" href="./stylesheets/jot_Rails.css">
+	<link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/humanity/jquery-ui.css">
+
+</head>
+<body>
+	<div id="header">
+		<h1>My Task Helper</h1>
+		<ul >
+		<li><a id="loginLink" href="#" >Login</a></li>
+		<li><a id="registerLink" href="#" >Register</a></li>
+		</ul>
+
+	</div>
+
+
+
+	<div id="content">
+		<h2>How to Use:</h2>
+		<p>Drag and sort tasks <br />Drag and drop tasks into trash to delete & restore deleted items </p>
+        <div id="trashContainer"><img src="images/emptyCan.png" id='trash' width="120px" alt="Drag tasks into trash bin." /><img src="images/undo.png" id='restoreIcon' width="24px" alt="Click to restore deleted items" /> </div>
+
+
+
+		<ul id="tasks" >
+			<li>
+			        <span></span>
+					<h3>Brainstorm on what Task Helper functionality</h3>
+					<img src="images/edit.gif" />
+					<p>Think about core data and add functional aspects</p>
+
+			</li>
+			<li>
+			        <span></span>
+
+					<h3>Wireframe the App</h3>
+					<img src="images/edit.gif" />
+					<p>Figure out the where things might go.</p>
+			</li>
+			<li>
+			<span></span>
+					<h3>Create the Markup</h3>
+					<img src="images/edit.gif" />
+					<p>Try to make minimal semantic HTML.</p>
+			</li>
+			<li>
+			<span></span>
+					<h3>Give Task Helper some style</h3>
+					<img src="images/edit.gif" />
+					<p>Add some CSS flavor to the page</p>
+			</li>
+			<li>
+			<span></span>
+					<h3>Extend the MarkUp.</h3>
+					<img src="images/edit.gif" />
+					<p>Add classes, ids and divs as needed.</p>
+			</li>
+			<li>
+			<span></span>
+					<h3>Finish making Task Helper look snappy</h3>
+					<img src="images/edit.gif" />
+					<p>Add some mouse over highlighting and other good CSS stuff</p>
+			</li>
+			<li>
+			<span></span>
+					<h3>Make Task Helper do something</h3>
+					<img src="images/edit.gif" />
+					<p>Create some JS JSON data and add to it</p>
+			</li>
+			<li>
+			<span></span>
+					<h3>JQuery-ify the Task Helper</h3>
+					<img src="images/edit.gif" />
+					<p>Add JQuery love to interface events and AJAX.</p>
+			</li>
+
+		</ul>
+	<ul id="trashList" >
+	</ul>
+	<form id="addForm" >
+		 <fieldset id='addJotFields'>
+		   <label for="title">Title *:</label>
+		   <input type="text" id='title' name='title'  class="required" />
+		   <label for="description">Description *:</label>
+		   <input type="text" id='description' name='description'  class="required"/>
+		   <label for="startDate">Start Date *:</label>
+		   <input type="text" id='startDate' name='startDate'   class="required" />
+		   <label for="endDate">End Date *:</label>
+		   <input type="text" id='endDate' name='endDate' class="required" />
+		   <label for="status">Status:</label>
+		   <select id='status' name='status'>
+		     <option>Not Started</option>
+		     <option>In Progress</option>
+		     <option>Complete</option>
+		   </select>
+		   <label for="tags">Tags *:</label>
+		   <input type="text" id='tags' name='tags' title="Tag Me!!" class="required">
+		   <a id='addButton' href='#'>Add!</a>
+		 	<a id='cancelButton' href='#'>Cancel</a>
+		</fieldset>
+		</form>
+		<div class="slide" id="slide"></div>
+
+
+	<div id="register-form" title="Register">
+			<form>
+				<fieldset>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+				</fieldset>
+		</form>
+	</div>
+
+	<div id="login-form" title="Login">
+			<form>
+				<fieldset>
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+				</fieldset>
+		</form>
+	</div>
+
+
+
+	</div>
+	<div id="footer">
+		copyright &copy; 2011 Web Dev Community
+	</div>
+	<script type="text/javascript" src="./javascripts/jquery.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./javascripts/ScriptRails.js"></script>
+
+
+</body>
+</html>

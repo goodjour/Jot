@@ -1,0 +1,290 @@
+
+* { margin: 0; padding: 0; }
+
+body{
+	background: url(../images/054_fabric_tanchenille_sm.jpg) repeat;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* headings */
+
+h1 {
+	font-size: 28px;
+	color: #000;
+	height: 50px;
+	padding: 20px 0px 0px 100px;
+	background: #FFF url(../images/red_pushpin.jpg) top left no-repeat;
+}
+
+h2 {
+	font-size: 24px;
+	width: 600px;
+	text-align:center;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	color: #000;
+}
+
+
+/*  divisions */
+
+#header {
+	width:1000px;
+	margin: 0 auto;
+	background: #000;
+	height: 80px;
+}
+
+#header ul {
+  position:absolute;
+  top:0px;
+  right:200px;
+ }
+ #header ul li{
+
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
+    padding-left: 10px;
+  border-right:  black solid 1px;
+}
+ 
+ #header ul li:last-child{
+  border:0px ;
+ }
+#header ul li a{
+font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+
+
+#content {
+	margin: 0 auto;
+	width:1000px;
+	overflow:hidden;
+	background: url(../images/fabricwall_bk.jpg);
+	position:relative;
+}
+
+#footer {
+	clear: both;
+	margin: 0 auto;
+	width:1000px;
+	height: 30px;
+	background: #000;
+	padding-top: 20px;
+	text-align:center;
+	font-size: 14px;
+	color: #FFF;
+}
+
+/* content */
+
+#content p {
+	display:block;
+	margin-left:30px;
+	padding: 5px;
+	width: 600px;
+	background:#FFF;
+	font-size:16px;
+	color:#000;
+	border: 1px solid #FF6600;
+	
+}
+
+
+/* lists */
+
+#tasks {
+	margin:0;
+	padding:0; 
+	float:left;
+	width:600px;
+	margin-bottom: 20px;
+	min-height:400px;
+}
+
+#tasks li {
+	background: url(../images/stickNote_bk.png) top left no-repeat;
+	float:left;
+	height: 107px;
+	width: 158px;
+	padding: 35px 20px 10px 20px;
+	display: block;
+	overflow:auto;
+	position: relative;
+	cursor:pointer;
+}
+
+#tasks li span 
+{
+    position:absolute;
+    top :15px;
+    left:50px;
+    font-weight:bold;
+    color:Blue;
+}
+
+#tasks li h3 {
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom:1px;
+}
+#tasks li img {
+	position:absolute;
+	right:20px;
+	top:15px;
+}
+
+#tasks li p {
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 0;
+	font-size:10px;
+	color:#000;
+	border: none;
+	background:none;
+	width: 140px;
+	border-top:red solid 2px;
+}
+
+/*form elements */
+
+#addForm fieldset 
+{
+	width: 270px;
+	height: 350px;
+	margin-right:5px;
+	float:right;
+	border: 1px solid #ececec;
+	padding: 20px 10px 20px 40px;
+	background: #EFEFEF ;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-box-shadow: #888 0px 0px 5px 5px;
+    z-index:100;
+    position:relative;
+	
+}
+
+#register-form 	fieldset { padding:0; border:0; margin-top:25px; }
+#login-form 	fieldset { padding:0; border:0; margin-top:25px; }
+
+
+
+label {
+	display: block;
+	font-size: 12px;
+	color:#000;
+	font-weight:bold;
+}
+
+input, select {
+	display: block;
+	line-height: 30px;
+	width: 200px;
+	height: 25px;
+	font-size: 16px;
+	color:#000;
+	margin-bottom:5px;
+}
+
+/* links */
+
+#addlink 
+{
+    position:fixed;
+    top:300px;
+    left:800px;
+	margin: 10px 0px 10px 20px;
+	padding: 10px;
+	display: block;
+	width:100px;
+	height:20px;
+	border: 1px solid #000;
+	background:#EED12D;
+	font-size: 18px;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+
+#addButton {
+	 margin-top:10px;
+	width:100px;
+ 	height:40px;
+}	
+
+#cancelButton {
+	 margin-top:10px;
+	width:100px;
+ 	height:40px;}
+
+#trashContainer
+{
+    position:fixed;
+    top:50px;
+    right:20%;
+    width:120px;
+ 
+}
+
+#restoreIcon
+{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:24px;
+    cursor:pointer;
+}
+
+#trashList
+{
+    visibility:hidden;
+}
+
+
+
+
+.slide 
+{
+    width: 31px;
+	height: 300px;
+    float:right;
+	margin-top: 20px;
+	padding: 20px 0px 20px 0px;
+	border-right: solid 4px #422410;
+	background: url(../images/btn-slide-close.gif) no-repeat center ;
+	cursor:pointer;
+}
+  
+.slideClose
+{
+    background-image :url(../images/btn-slide-open.gif);
+}
+
+
+#ui-datepicker-div { font-size: 12px; }
+
+
+div.message{
+    background: transparent url(../images/msg_arrow.gif) no-repeat scroll left center;
+    padding-left: 7px;
+    position:absolute;
+    width:160px;
+    overflow:hidden;
+    white-space: nowrap;   
+    font-size:12px; 
+}
+
+div.error{
+    background-color:#F3E6E6;
+    border-color: #924949;
+    border-style: solid solid solid none;
+    border-width: 2px;
+    padding: 5px;
+}
