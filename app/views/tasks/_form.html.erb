@@ -29,9 +29,8 @@
 <% end %>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-    alert('document ready');
-    $(".edit_task")
+  $(document).ready(function() { 
+    $(".edit_task") 
       .bind('ajax:loading', function() {alert("loading!");})
       .bind('ajax:success', function(data, status, xhr) {alert("success!");})
       .bind('ajax:failure', function(xhr, status, error) {alert("failure!");})
